@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Magento">
   <template name="magento:config:translate" value="&lt;translate&gt;&#10;    &lt;modules&gt;&#10;        &lt;$MODULENAME$&gt;&#10;            &lt;files&gt;&#10;                &lt;default&gt;$MODULENAME$.csv&lt;/default&gt;&#10;            &lt;/files&gt;&#10;        &lt;/$MODULENAME$&gt;&#10;    &lt;/modules&gt;&#10;&lt;/translate&gt;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -120,7 +120,7 @@
   </template>
   <template name="magento:config:setup" value="&lt;resources&gt;&#10;    &lt;$ABBREV$_setup&gt;&#10;        &lt;setup&gt;&#10;            &lt;module&gt;$MODULENAME$&lt;/module&gt;&#10;        &lt;/setup&gt;        &#10;    &lt;/$ABBREV$_setup&gt;&#10;&lt;/resources&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -155,7 +155,7 @@
   <template name="magento:config:router" value="&lt;routers&gt;&#10;    &lt;$abbrev$&gt;&#10;        &lt;use&gt;$route$&lt;/use&gt;&#10;        &lt;args&gt;&#10;            &lt;module&gt;$MODULENAME$&lt;/module&gt;&#10;            &lt;frontName&gt;$frontname$&lt;/frontName&gt;&#10;        &lt;/args&gt;&#10;    &lt;/$abbrev$&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="abbrev" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="route" expression="enum(&quot;standard&quot;,&quot;admin&quot;)" defaultValue="standard" alwaysStopAt="true" />
-    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="frontname" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
