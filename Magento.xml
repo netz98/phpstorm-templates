@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Magento">
+  <template name="magento:config:translate" value="&lt;translate&gt;&#10;    &lt;modules&gt;&#10;        &lt;$MODULENAME$&gt;&#10;            &lt;files&gt;&#10;                &lt;default&gt;$MODULENAME$.csv&lt;/default&gt;&#10;            &lt;/files&gt;&#10;        &lt;/$MODULENAME$&gt;&#10;    &lt;/modules&gt;&#10;&lt;/translate&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:layouts" value="&lt;layout&gt;&#10;    &lt;updates&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;file&gt;$FILENAME$.xml&lt;/file&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/updates&gt;&#10;&lt;/layout&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILENAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:blocks" value="&lt;blocks&gt;&#10;    &lt;$ABBREV$&gt;&#10;        &lt;class&gt;$MODULE_NAME$_Block&lt;/class&gt;&#10;    &lt;/$ABBREV$&gt;&#10;&lt;/blocks&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:models" value="&lt;models&gt;&#10;    &lt;$ABBREV$&gt;&#10;        &lt;class&gt;$MODULE_NAME$_Model&lt;/class&gt;&#10;    &lt;/$ABBREV$&gt;&#10;&lt;/models&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:helper" value="&lt;helpers&gt;&#10;    &lt;$ABBREV$&gt;&#10;        &lt;class&gt;$MODULE_NAME$_Helper&lt;/class&gt;&#10;    &lt;/$ABBREV$&gt;&#10;&lt;/helpers&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:global-default" value="&lt;global&gt;&#10;    &lt;blocks&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Block&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/blocks&gt;&#10;    &lt;models&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Model&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/models&gt;&#10;    &lt;helpers&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Helper&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/helpers&gt;&#10;&lt;/global&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="mgm" value="$var$ = Mage::getModel('$model$');" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:setup" value="&lt;resources&gt;&#10;    &lt;$ABBREV$_setup&gt;&#10;        &lt;setup&gt;&#10;            &lt;module&gt;$MODULENAME$&lt;/module&gt;&#10;        &lt;/setup&gt;        &#10;    &lt;/$ABBREV$_setup&gt;&#10;&lt;/resources&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:cron" value="&lt;crontab&gt;&#10;    &lt;jobs&gt;&#10;        &lt;$job_name$&gt;&#10;            &lt;schedule&gt;&#10;                &lt;cron_expr&gt;* * * * *&lt;/cron_expr&gt;&#10;            &lt;/schedule&gt;&#10;            &lt;run&gt;&#10;                &lt;model&gt;$MODEL$&lt;/model&gt;&#10;            &lt;/run&gt;&#10;        &lt;/$job_name$&gt;&#10;    &lt;/jobs&gt;&#10;&lt;/crontab&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="job_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:config:router" value="&lt;routers&gt;&#10;    &lt;$abbrev$&gt;&#10;        &lt;use&gt;$route$&lt;/use&gt;&#10;        &lt;args&gt;&#10;            &lt;module&gt;$MODULENAME$&lt;/module&gt;&#10;            &lt;frontName&gt;$frontname$&lt;/frontName&gt;&#10;        &lt;/args&gt;&#10;    &lt;/$abbrev$&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="abbrev" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="route" expression="enum(&quot;standard&quot;,&quot;admin&quot;)" defaultValue="standard" alwaysStopAt="true" />
+    <variable name="MODULENAME" expression="" defaultValue="Netz98_" alwaysStopAt="true" />
+    <variable name="frontname" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
