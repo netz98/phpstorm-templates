@@ -1,0 +1,28 @@
+h1. Templates for PHPStorm IDE
+
+h2. Installation
+
+Put Magento.xml file into config/templates folder of you PHPStorm configuration.
+
+h3. MacOS
+
+The template folder can be found here: ~/Library/Preferences/WebIDE10/config/templates
+
+h3. Linux
+
+The template folder can be found here: ~/.WebIde10/config/templates
+
+h2. Magento Live Templates
+
+The file Magento.xml contains some live templates for easy module config.xml creation.
+You can access the templates by typing "magento" and the shortcut CTRL + J.
+
+The templates support creation of:
+
+* Block definition
+* Helper definition
+* Layout definition
+* Router definition
+* Translation definition
+* Cron definition
+* Setup definition
