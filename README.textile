@@ -7,7 +7,7 @@ For detailed informations visit "PHPStorm Live Template Web Help page.":http://w
 
 h3. MacOS
 
-The template folder can be found here: *~/Library/Preferences/WebIDE10/config/templates*
+The template folder can be found here: *~/Library/Preferences/WebIDE10/templates*
 
 h3. Linux
 
