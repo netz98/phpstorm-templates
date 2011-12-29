@@ -171,5 +171,19 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="magento:config:event" value="&lt;events&gt;&#10;&#9;&lt;event_name&gt;&#10;&#9;&#9;&lt;observers&gt;&#10;&#9;&#9;    &lt;your_module_name_event_name&gt;&#10;&#9;&#9;        &lt;type&gt;singleton&lt;/type&gt;&#10;&#9;&#9;        &lt;class&gt;your_module_name/observer&lt;/class&gt;&#10;&#9;&#9;        &lt;method&gt;observer_method&lt;/method&gt;&#10;&#9;&#9;    &lt;/your_module_name_event_name&gt;&#10;&#9;&#9;&lt;/observers&gt;&#10;&#9;&lt;/event_name&gt;&#10;&lt;/events&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
-
