@@ -24,7 +24,10 @@ The templates support creation of:
 * Event definition
 * Helper definition
 * Layout definition
+* Model definition
+* Module meta information
 * Router definition
 * Translation definition
+* E-Mail-Template definition
 * Cron definition
 * Setup definition
