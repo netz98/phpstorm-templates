@@ -343,8 +343,27 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="n98:config:router-adminhtml" value="&lt;routers&gt;&#10;    &lt;adminhtml&gt;        &#10;        &lt;args&gt;&#10;            &lt;modules&gt;&#10;                &lt;$NameSpace_ModuleName$ before=&quot;Mage_Adminhtml&quot;&gt;$NameSpace_ModuleName$_Adminhtml&lt;/$NameSpace_ModuleName$$&gt; &#10;            &lt;/modules&gt;&#10;        &lt;/args&gt;&#10;    &lt;/adminhtml&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:router-adminhtml" value="&lt;routers&gt;&#10;    &lt;adminhtml&gt;        &#10;        &lt;args&gt;&#10;            &lt;modules&gt;&#10;                &lt;$NameSpace_ModuleName$ before=&quot;Mage_Adminhtml&quot;&gt;$NameSpace_ModuleName$_Adminhtml&lt;/$NameSpace_ModuleName$$&gt; &#10;            &lt;/modules&gt;&#10;        &lt;/args&gt;&#10;    &lt;/adminhtml&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:model:resource-entity-table" value="&lt;models&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Model&lt;/class&gt;&#10;        &lt;resourceModel&gt;$modulename$_resource&lt;/resourceModel&gt;&#10;    &lt;/$modulename$&gt;&#10;    &lt;$modulename$_resource&gt;&#10;        &lt;entities&gt;&#10;            &lt;$entity$&gt;&#10;                &lt;table&gt;$table$&lt;/table&gt;&#10;            &lt;$entity$&gt;&#10;        &lt;/entities&gt;&#10;    &lt;/$modulename$_resource&gt;&#10;&lt;/models&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
