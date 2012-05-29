@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Magento">
-  <template name="magento:config:translate" value="&lt;translate&gt;&#10;    &lt;modules&gt;&#10;        &lt;$NameSpace_ModuleName$&gt;&#10;            &lt;files&gt;&#10;                &lt;default&gt;$name_of_translation_file$.csv&lt;/default&gt;&#10;            &lt;/files&gt;&#10;        &lt;/$NameSpace_ModuleName$&gt;&#10;    &lt;/modules&gt;&#10;&lt;/translate&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:translate" value="&lt;translate&gt;&#10;    &lt;modules&gt;&#10;        &lt;$NameSpace_ModuleName$&gt;&#10;            &lt;files&gt;&#10;                &lt;default&gt;$name_of_translation_file$.csv&lt;/default&gt;&#10;            &lt;/files&gt;&#10;        &lt;/$NameSpace_ModuleName$&gt;&#10;    &lt;/modules&gt;&#10;&lt;/translate&gt;" description="Magento translation file definition" toReformat="false" toShortenFQNames="true">
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="name_of_translation_file" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -17,7 +17,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:layouts" value="&lt;layout&gt;&#10;    &lt;updates&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;file&gt;$name_of_layout_file$.xml&lt;/file&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/updates&gt;&#10;&lt;/layout&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:layouts" value="&lt;layout&gt;&#10;    &lt;updates&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;file&gt;$name_of_layout_file$.xml&lt;/file&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/updates&gt;&#10;&lt;/layout&gt;" description="Magento layout file definition" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="name_of_layout_file" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -34,7 +34,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:blocks" value="&lt;blocks&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Block&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/blocks&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:blocks" value="&lt;blocks&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Block&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/blocks&gt;" description="Magento block class group definition" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -51,7 +51,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:models" value="&lt;models&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Model&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/models&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:models" value="&lt;models&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Model&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/models&gt;" description="Magento model class group definition" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -68,7 +68,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:helper" value="&lt;helpers&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Helper&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/helpers&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:helper" value="&lt;helpers&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Helper&lt;/class&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/helpers&gt;" description="Magento helper class group definition" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -85,7 +85,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:global-default" value="&lt;global&gt;&#10;    &lt;blocks&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$ClassName_Prefix$_Block&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/blocks&gt;&#10;    &lt;models&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Model&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/models&gt;&#10;    &lt;helpers&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Helper&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/helpers&gt;&#10;&lt;/global&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:global-default" value="&lt;global&gt;&#10;    &lt;blocks&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$ClassName_Prefix$_Block&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/blocks&gt;&#10;    &lt;models&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Model&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/models&gt;&#10;    &lt;helpers&gt;&#10;        &lt;$ABBREV$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Helper&lt;/class&gt;&#10;        &lt;/$ABBREV$&gt;&#10;    &lt;/helpers&gt;&#10;&lt;/global&gt;" description="Magento standard class group definitions (blocks, helpers, models) for global part" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ABBREV" expression="" defaultValue="" alwaysStopAt="true" />
@@ -138,7 +138,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:cron" value="&lt;crontab&gt;&#10;    &lt;jobs&gt;&#10;        &lt;$job_name$&gt;&#10;            &lt;schedule&gt;&#10;                &lt;cron_expr&gt;* * * * *&lt;/cron_expr&gt;&#10;            &lt;/schedule&gt;&#10;            &lt;run&gt;&#10;                &lt;model&gt;$MODEL$&lt;/model&gt;&#10;            &lt;/run&gt;&#10;        &lt;/$job_name$&gt;&#10;    &lt;/jobs&gt;&#10;&lt;/crontab&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:cron" value="&lt;crontab&gt;&#10;    &lt;jobs&gt;&#10;        &lt;$job_name$&gt;&#10;            &lt;schedule&gt;&#10;                &lt;cron_expr&gt;* * * * *&lt;/cron_expr&gt;&#10;            &lt;/schedule&gt;&#10;            &lt;run&gt;&#10;                &lt;model&gt;$MODEL$&lt;/model&gt;&#10;            &lt;/run&gt;&#10;        &lt;/$job_name$&gt;&#10;    &lt;/jobs&gt;&#10;&lt;/crontab&gt;" description="Magento cronjob definition" toReformat="false" toShortenFQNames="true">
     <variable name="job_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODEL" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -155,7 +155,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:router" value="&lt;routers&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;use&gt;$route$&lt;/use&gt;&#10;        &lt;args&gt;&#10;            &lt;module&gt;$NameSpace_ModuleName$&lt;/module&gt;&#10;            &lt;frontName&gt;$frontname$&lt;/frontName&gt;&#10;        &lt;/args&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:router" value="&lt;routers&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;use&gt;$route$&lt;/use&gt;&#10;        &lt;args&gt;&#10;            &lt;module&gt;$NameSpace_ModuleName$&lt;/module&gt;&#10;            &lt;frontName&gt;$frontname$&lt;/frontName&gt;&#10;        &lt;/args&gt;&#10;    &lt;/$modulename$&gt;&#10;&lt;/routers&gt;" description="Magento standard router definition" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="route" expression="enum(&quot;standard&quot;,&quot;admin&quot;)" defaultValue="standard" alwaysStopAt="true" />
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
@@ -174,7 +174,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:event" value="&lt;events&gt;&#10;&#9;&lt;$event_name$&gt;&#10;&#9;&#9;&lt;observers&gt;&#10;&#9;&#9;    &lt;$event_abbrev$&gt;&#10;&#9;&#9;        &lt;type&gt;singleton&lt;/type&gt;&#10;&#9;&#9;        &lt;class&gt;$module_name$/observer&lt;/class&gt;&#10;&#9;&#9;        &lt;method&gt;$method$&lt;/method&gt;&#10;&#9;&#9;    &lt;/$event_abbrev$&gt;&#10;&#9;&#9;&lt;/observers&gt;&#10;&#9;&lt;/$event_name$&gt;&#10;&lt;/events&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:event" value="&lt;events&gt;&#10;    &lt;$event_name$&gt;&#10;        &lt;observers&gt;&#10;            &lt;$event_abbrev$&gt;&#10;                &lt;type&gt;singleton&lt;/type&gt;&#10;                &lt;class&gt;$module_name$/observer&lt;/class&gt;&#10;                &lt;method&gt;$method$&lt;/method&gt;&#10;            &lt;/$event_abbrev$&gt;&#10;        &lt;/observers&gt;&#10;    &lt;/$event_name$&gt;&#10;&lt;/events&gt;" description="Magento event observer definition" toReformat="false" toShortenFQNames="true">
     <variable name="event_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
@@ -272,7 +272,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:template" value="&lt;template&gt;&#10;    &lt;email&gt;&#10;        &lt;$email_template_name$ module=&quot;$modulename$&quot; translate=&quot;label&quot;&gt;&#10;            &lt;label&gt;$label$&lt;/label&gt;&#10;            &lt;file&gt;$file$.html&lt;/file&gt;&#10;            &lt;type&gt;html&lt;/type&gt;&#10;        &lt;/$email_template_name$&gt;&#10;    &lt;/email&gt;&#10;&lt;/template&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:template" value="&lt;template&gt;&#10;    &lt;email&gt;&#10;        &lt;$email_template_name$ module=&quot;$modulename$&quot; translate=&quot;label&quot;&gt;&#10;            &lt;label&gt;$label$&lt;/label&gt;&#10;            &lt;file&gt;$file$.html&lt;/file&gt;&#10;            &lt;type&gt;html&lt;/type&gt;&#10;        &lt;/$email_template_name$&gt;&#10;    &lt;/email&gt;&#10;&lt;/template&gt;" description="Magento email template definition" toReformat="false" toShortenFQNames="true">
     <variable name="email_template_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
@@ -291,7 +291,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:module" value="&lt;modules&gt;&#10;     &lt;$NameSpace_ModuleName$&gt;&#10;         &lt;active&gt;$active$&lt;/active&gt;&#10;         &lt;codePool&gt;$codepool$&lt;/codePool&gt;&#10;         &lt;depends&gt;&#10;             &lt;$AnotherNameSpace_ModuleName$ /&gt;&#10;         &lt;/depends&gt;&#10;         &lt;version&gt;$version_number$&lt;/version&gt;&#10;     &lt;/$NameSpace_ModuleName$&gt;&#10;&lt;/modules&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:module" value="&lt;modules&gt;&#10;     &lt;$NameSpace_ModuleName$&gt;&#10;         &lt;active&gt;$active$&lt;/active&gt;&#10;         &lt;codePool&gt;$codepool$&lt;/codePool&gt;&#10;         &lt;depends&gt;&#10;             &lt;$AnotherNameSpace_ModuleName$ /&gt;&#10;         &lt;/depends&gt;&#10;         &lt;version&gt;$version_number$&lt;/version&gt;&#10;     &lt;/$NameSpace_ModuleName$&gt;&#10;&lt;/modules&gt;" description="Magento module meta information definition" toReformat="false" toShortenFQNames="true">
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="active" expression="enum(&quot;true&quot;,&quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="codepool" expression="enum(&quot;core&quot;,&quot;community&quot;,&quot;local&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -311,7 +311,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:layout:basic" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;layout&gt;&#10;    &lt;default&gt;        &#10;    &lt;/default&gt;&#10;&lt;/layout&gt;" description="Basic layout structure" toReformat="false" toShortenFQNames="true">
+  <template name="magento:layout:basic" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;layout&gt;&#10;    &lt;default&gt;        &#10;    &lt;/default&gt;&#10;&lt;/layout&gt;" description="Magento basic layout structure" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -326,7 +326,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:layout:wrap.reference" value="&lt;reference name=&quot;$block$&quot;&gt;&#10;    $SELECTION$&#10;&lt;/reference&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:layout:wrap.reference" value="&lt;reference name=&quot;$block$&quot;&gt;&#10;    $SELECTION$&#10;&lt;/reference&gt;" description="Magento layout XML -&gt; Reference block" toReformat="false" toShortenFQNames="true">
     <variable name="block" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
@@ -343,7 +343,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:router-adminhtml" value="&lt;routers&gt;&#10;    &lt;adminhtml&gt;        &#10;        &lt;args&gt;&#10;            &lt;modules&gt;&#10;                &lt;$NameSpace_ModuleName$ before=&quot;Mage_Adminhtml&quot;&gt;$NameSpace_ModuleName$_Adminhtml&lt;/$NameSpace_ModuleName$&gt; &#10;            &lt;/modules&gt;&#10;        &lt;/args&gt;&#10;    &lt;/adminhtml&gt;&#10;&lt;/routers&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:router-adminhtml" value="&lt;routers&gt;&#10;    &lt;adminhtml&gt;        &#10;        &lt;args&gt;&#10;            &lt;modules&gt;&#10;                &lt;$NameSpace_ModuleName$ before=&quot;Mage_Adminhtml&quot;&gt;$NameSpace_ModuleName$_Adminhtml&lt;/$NameSpace_ModuleName$&gt; &#10;            &lt;/modules&gt;&#10;        &lt;/args&gt;&#10;    &lt;/adminhtml&gt;&#10;&lt;/routers&gt;" description="Magento admin router definition" toReformat="false" toShortenFQNames="true">
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -374,6 +374,45 @@
       <option name="JSP" value="false" />
       <option name="SQL" value="false" />
       <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:controller:frontend" value="class $vendor$_$module$_Adminhtml_$controller$Controller extends Mage_Core_Controller_Front_Action&#10;{&#10;    $cursor$&#10;}" description="Magento frontend controller" toReformat="false" toShortenFQNames="true">
+    <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="magento:controller:adminhtml" value="class $vendor$_$module$_Adminhtml_$controller$Controller extends Mage_Adminhtml_Controller_Action&#10;{&#10;    /**&#10;     * Check if access is allowed&#10;     *&#10;     * @return bool&#10;     */&#10;    protected function _isAllowed()&#10;    {&#10;        return Mage::getSingleton('admin/session')-&gt;isAllowed('$acl$');&#10;    }&#10;    &#10;    $cursor$&#10;}" description="Magento adminhtml controller" toReformat="false" toShortenFQNames="true">
+    <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="acl" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="true" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="false" />
     </context>
