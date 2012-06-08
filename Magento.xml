@@ -358,7 +358,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:model:resource-entity-table" value="&lt;models&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Model&lt;/class&gt;&#10;        &lt;resourceModel&gt;$modulename$_resource&lt;/resourceModel&gt;&#10;    &lt;/$modulename$&gt;&#10;    &lt;$modulename$_resource&gt;&#10;        &lt;entities&gt;&#10;            &lt;$entity$&gt;&#10;                &lt;table&gt;$table$&lt;/table&gt;&#10;            &lt;$entity$&gt;&#10;        &lt;/entities&gt;&#10;    &lt;/$modulename$_resource&gt;&#10;&lt;/models&gt;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="magento:model:resource-entity-table" value="&lt;models&gt;&#10;    &lt;$modulename$&gt;&#10;        &lt;class&gt;$ClassName_Prefix$_Model&lt;/class&gt;&#10;        &lt;resourceModel&gt;$modulename$_resource&lt;/resourceModel&gt;&#10;    &lt;/$modulename$&gt;&#10;    &lt;$modulename$_resource&gt;&#10;        &lt;entities&gt;&#10;            &lt;$entity$&gt;&#10;                &lt;table&gt;$table$&lt;/table&gt;&#10;            &lt;/$entity$&gt;&#10;        &lt;/entities&gt;&#10;    &lt;/$modulename$_resource&gt;&#10;&lt;/models&gt;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
