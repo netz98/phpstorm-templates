@@ -85,10 +85,9 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:global-default" value="&lt;global&gt;&#10;    &lt;blocks&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$ClassName_Prefix$_Block&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/blocks&gt;&#10;    &lt;models&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Model&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/models&gt;&#10;    &lt;helpers&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$MODULE_NAME$_Helper&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/helpers&gt;&#10;&lt;/global&gt;" description="Magento standard class group definitions (blocks, helpers, models) for global part" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:global-default" value="&lt;global&gt;&#10;    &lt;blocks&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$NameSpace_ModuleName$_Block&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/blocks&gt;&#10;    &lt;models&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$NameSpace_ModuleName$_Model&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/models&gt;&#10;    &lt;helpers&gt;&#10;        &lt;$modulename$&gt;&#10;            &lt;class&gt;$NameSpace_ModuleName$_Helper&lt;/class&gt;&#10;        &lt;/$modulename$&gt;&#10;    &lt;/helpers&gt;&#10;&lt;/global&gt;" description="Magento standard class group definitions (blocks, helpers, models) for global part" toReformat="false" toShortenFQNames="true">
     <variable name="modulename" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ClassName_Prefix" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
