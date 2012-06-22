@@ -432,5 +432,21 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="magento:config:phpunit" value="&lt;phpunit&gt;&#10;    &lt;suite&gt;&#10;        &lt;modules&gt;&#10;            &lt;$NameSpace_ModuleName$ /&gt;&#10;        &lt;/modules&gt;&#10;    &lt;/suite&gt;&#10;&lt;/phpunit&gt;" description="Definition for EcomDev PHPUnit Test-Suite" toReformat="false" toShortenFQNames="true">
+    <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 
