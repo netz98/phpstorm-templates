@@ -376,7 +376,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:controller:frontend" value="class $vendor$_$module$_Adminhtml_$controller$Controller extends Mage_Core_Controller_Front_Action&#10;{&#10;    $cursor$&#10;}" description="Magento frontend controller" toReformat="false" toShortenFQNames="true">
+  <template name="magento:controller:frontend" value="class $vendor$_$module$_$controller$Controller extends Mage_Core_Controller_Front_Action&#10;{&#10;    $cursor$&#10;}" description="Magento frontend controller" toReformat="false" toShortenFQNames="true">
     <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
