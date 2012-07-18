@@ -289,10 +289,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:config:module" value="&lt;modules&gt;&#10;     &lt;$NameSpace_ModuleName$&gt;&#10;         &lt;active&gt;$active$&lt;/active&gt;&#10;         &lt;codePool&gt;$codepool$&lt;/codePool&gt;&#10;         &lt;depends&gt;&#10;             &lt;$AnotherNameSpace_ModuleName$ /&gt;&#10;         &lt;/depends&gt;&#10;         &lt;version&gt;$version_number$&lt;/version&gt;&#10;     &lt;/$NameSpace_ModuleName$&gt;&#10;&lt;/modules&gt;" description="Magento module meta information definition" toReformat="false" toShortenFQNames="true">
+  <template name="magento:config:module" value="&lt;?xml version=&quot;1.0&quot;?&gt;&#10;&lt;config&gt;&#10;    &lt;modules&gt;&#10;        &lt;$NameSpace_ModuleName$&gt;&#10;            &lt;active&gt;$active$&lt;/active&gt;&#10;            &lt;codePool&gt;$codepool$&lt;/codePool&gt;&#10;            &lt;depends&gt;&#10;                &lt;$AnotherNameSpace_ModuleName$ /&gt;&#10;            &lt;/depends&gt;&#10;            &lt;version&gt;$version_number$&lt;/version&gt;&#10;        &lt;/$NameSpace_ModuleName$&gt;&#10;    &lt;/modules&gt;&#10;&lt;/config&gt;" description="Magento module meta information definition" toReformat="false" toShortenFQNames="true">
     <variable name="NameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="active" expression="enum(&quot;true&quot;,&quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="codepool" expression="enum(&quot;core&quot;,&quot;community&quot;,&quot;local&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="codepool" expression="enum(&quot;core&quot;,&quot;community&quot;,&quot;local&quot;)" defaultValue="community" alwaysStopAt="true" />
     <variable name="AnotherNameSpace_ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="version_number" expression="" defaultValue="0.1.0" alwaysStopAt="true" />
     <context>
@@ -376,7 +376,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="magento:controller:frontend" value="class $vendor$_$module$_Adminhtml_$controller$Controller extends Mage_Core_Controller_Front_Action&#10;{&#10;    $cursor$&#10;}" description="Magento frontend controller" toReformat="false" toShortenFQNames="true">
+  <template name="magento:controller:frontend" value="class $vendor$_$module$_$controller$Controller extends Mage_Core_Controller_Front_Action&#10;{&#10;    $cursor$&#10;}" description="Magento frontend controller" toReformat="false" toShortenFQNames="true">
     <variable name="vendor" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controller" expression="" defaultValue="" alwaysStopAt="true" />
